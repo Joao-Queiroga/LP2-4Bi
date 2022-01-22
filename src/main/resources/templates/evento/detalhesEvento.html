@@ -13,13 +13,19 @@
 
     <div class="container" th:each="evento : ${evento}">
         <div class="row">
-            <p>Nome: <span th:text="${evento.nome}"></spant></p>
-            <p>Local: <span th:text="${evento.local}"></spant></p>
-            <p>Data: <span th:text="${evento.data}"></spant></p>
-            <p>Horário: <span th:text="${evento.horario}"></spant></p>
+            <p>Nome: <span th:text="${evento.nome}"></span></p>
+            <p>Local: <span th:text="${evento.local}"></span></p>
+            <p>Data: <span th:text="${evento.data}"></span></p>
+            <p>Horário: <span th:text="${evento.horario}"></span></p>
         </div>
     </div>
 
+    <form method="post" class="container">
+        Nome: <input type="text" value="" name="nomeConvidado">
+        RG: <input type="text" value="" name="rg">
+        <button type="submit" class="waves-effect waves-light btn">Adicionar</button>
+    </form>
+    
     <script type="text/javascript" src="materialize/js/materialize.min.js"></script>
 </body>
 </html>
