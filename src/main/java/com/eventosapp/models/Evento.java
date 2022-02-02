@@ -14,7 +14,6 @@ public class Evento implements Serializable {
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
-    @NotEmpty
     private long codigo;
 
     @NotEmpty
